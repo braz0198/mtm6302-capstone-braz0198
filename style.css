@@ -1,20 +1,29 @@
 html {
     background-color: #ADADAD;
 }
-.logo{
+
+.logo {
     text-align: center;
 }
-button{
+
+button {
+    display: flex;
     background-color: black;
     color: white;
     border-radius: 27px;
     width: 357px;
     height: 54px;
-}
-#container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    margin: 0;
+    align-items: center;
+    margin: auto;
+}
+
+#container {
+    background-color: white;
+    border-style: solid, 1px, black;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
 }

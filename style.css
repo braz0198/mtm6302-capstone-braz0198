@@ -6,24 +6,60 @@ html {
     text-align: center;
 }
 
-button {
-    display: flex;
-    background-color: black;
-    color: white;
-    border-radius: 27px;
-    width: 357px;
-    height: 54px;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
+.card {
+    list-style: none;
+    padding: 40px;
+    background-color: white;
+    color: black;
+    text-align: center;
 }
 
-#container {
-    background-color: white;
-    border-style: solid, 1px, black;
+.card-title {
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+.card-subtitle {
+    font-weight: lighter;
+    color: black;
+}
+
+.card-image {
+    height: 120px;
+}
+
+#pokedex {
+    padding-inline-start: 0;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-column-gap: 15px;
-    grid-row-gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 20px;
+}
+
+.container {
+    padding: 40px;
+    margin: 0 auto;
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background: white;
+    opacity: 0.95;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#closeBtn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #ADADAD;
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    border-radius: 3px;
 }
